@@ -1,0 +1,117 @@
+@import './base/reset';
+
+@import './utill/varibale';
+
+@import './layout/footer';
+
+
+body{
+    font-family: $font-kr;
+    font-family: $font-en;
+}
+
+
+header .top{
+    position: relative;
+    background: #000;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    h1{
+        @include position('ceter');
+        background: #fff;
+        width: 100px;
+        height: 50px;
+
+        a{
+            height: 100%;
+            display: block;
+        }
+    }
+    .sns{
+        @include position('top');
+        left: 0;
+        width: 50px; height: 50px;
+        background: #fff;
+    }
+    .login{
+        @include position('top');
+        right: 0;
+        width: 50px; height: 50px;
+        background: #fff;
+    }
+}
+
+.gnb{
+    background: #ccc;
+    
+    ul{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        padding: 10px 0;
+    }
+}
+
+main{
+    width: 800px;
+    margin: 10px auto;
+    
+    .box1{
+        background: #ccc;
+        padding: 10px;
+        .top{
+            background: #fff;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .bottom{
+            background: #fff;
+            padding: 10px;
+            display: flex;
+
+            .left{
+                flex-grow: 1;
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: 10px;
+                gap: 10px;
+                
+                li{
+                    width: calc((100% - 20px) / 3);
+                    height: 100px;
+                    background: #000; color: #fff;
+                }
+            }
+            .right{
+                width: 150px;
+                background: #000;
+            }
+        }
+    }
+
+    .box2{
+        background: #ccc;
+        margin: 10px 0;
+        padding: 10px;
+
+        ul li{
+            display: flex;
+            justify-content: space-between;
+            
+
+            img{
+                width: 150px; height: 150px;
+            }
+            p{
+                background: #fff;
+                height: 150px;
+                width: calc(100% - 160px);
+
+            }
+        }
+        ul > *+*{
+            margin-top: 10px;
+        }
+    }
+}

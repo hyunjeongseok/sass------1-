@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background: #ccc;
+}
+
+header {
+  background: #000;
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  padding: 10px 10px 10px 160px;
+}
+
+.box1 {
+  background: #fff;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.box2 {
+  display: flex;
+  gap: 10px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.box2 div {
+  background: #fff;
+  flex: 1;
+}
+
+.box3, .box4, .box7 {
+  height: 100px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.box5 {
+  height: 100px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.box5 div {
+  background: #fff;
+  width: calc(80% - 5px);
+}
+.box5 :last-child {
+  background: #fff;
+  width: calc(20% - 5px);
+}
+
+.box6 {
+  height: 100px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.box6 div {
+  background: #fff;
+  width: calc(30% - 5px);
+}
+.box6 :last-child {
+  background: #fff;
+  width: calc(70% - 5px);
+}

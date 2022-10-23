@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+footer {
+  height: 100px;
+  background: #ccc;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  height: 100px;
+  background: #000;
+}
+
+.inner {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.box1 {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.box1 div {
+  background: #888;
+  height: 200px;
+  width: calc(50% - 5px);
+}
+.box1 :last-child {
+  position: relative;
+}
+.box1 :last-child .btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.box1 :last-child .prev {
+  left: 10px;
+}
+.box1 :last-child .next {
+  right: 10px;
+}
+
+.box2 {
+  background: #000;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.box3 {
+  background: #ccc;
+  padding: 10px;
+}
+.box3 ul {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.box3 ul :nth-child(1) {
+  width: calc(70% - 5px);
+}
+.box3 ul :nth-child(2) {
+  width: calc(30% - 5px);
+}
+.box3 ul :nth-child(3) {
+  width: calc(20% - 5px);
+}
+.box3 ul :nth-child(4) {
+  width: calc(80% - 5px);
+}
+.box3 li {
+  background: #888;
+  height: 100px;
+}
+
+.box4 {
+  margin: 10px 0;
+  background: #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.box4 h2 {
+  line-height: 50px;
+}
+.box4 .btn {
+  display: flex;
+}
+.box4 .btn a {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+}
+
+.box5 {
+  margin-bottom: 10px;
+}
+.box5 ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.box5 ul a {
+  background: #00f;
+  padding: 10px;
+  display: block;
+}
+.box5 ul strong {
+  background: #fff;
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+}
+.box5 ul p {
+  background: #fff;
+  padding: 10px;
+}

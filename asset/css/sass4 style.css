@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+footer {
+  height: 100px;
+  background: #ccc;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+header .top {
+  position: relative;
+  background: #000;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+header .top h1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 50px;
+  background: #fff;
+}
+header .top a {
+  display: block;
+  height: 100%;
+}
+header .top .sns {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+}
+header .top .login {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+}
+
+.gnb {
+  background: #ccc;
+}
+.gnb ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+main {
+  width: 800px;
+  margin: 10px auto;
+}
+main .box1 {
+  background: #ccc;
+  padding: 10px;
+}
+main .box1 .top {
+  background: #fff;
+  height: 100px;
+  margin-bottom: 10px;
+}
+main .box1 .bottom {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+}
+main .box1 .bottom .left {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  gap: 10px;
+}
+main .box1 .bottom .left li {
+  width: calc((100% - 20px) / 3);
+  height: 100px;
+  background: #000;
+  color: #fff;
+}
+main .box1 .bottom .right {
+  width: 150px;
+  background: #000;
+}
+main .box2 {
+  background: #ccc;
+  margin: 10px 0;
+  padding: 10px;
+}
+main .box2 ul li {
+  display: flex;
+  justify-content: space-between;
+}
+main .box2 ul li img {
+  width: 150px;
+  height: 150px;
+}
+main .box2 ul li p {
+  background: #fff;
+  height: 150px;
+  width: calc(100% - 160px);
+}
+main .box2 ul > * + * {
+  margin-top: 10px;
+}

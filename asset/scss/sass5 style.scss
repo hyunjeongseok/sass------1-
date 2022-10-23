@@ -1,0 +1,126 @@
+@import './base/reset';
+
+@import './utill/varibale';
+
+@import './layout/footer';
+
+
+body{
+    font-family: $font-kr;
+    font-family: $font-en;
+}
+
+
+header{
+    height: 100px;
+    background: #000;
+}
+
+.inner{
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+.box1{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    div{
+        background: #888;
+        height: 200px;
+        width: calc(50% - 5px);
+
+    }
+    :last-child{
+        position: relative;
+        .btn{
+            position: absolute;
+            width: 50px; height: 50px;
+            background: #fff;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .prev{left: 10px;}
+        .next{right: 10px;}
+    }
+}
+
+.box2{
+    background: #000;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.box3{
+    background: #ccc;
+    padding: 10px;
+    ul{
+        background: #fff;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        :nth-child(1){
+            width: calc(70% - 5px);
+        }
+        :nth-child(2){
+            width: calc(30% - 5px);
+        }
+        :nth-child(3){
+            width: calc(20% - 5px);
+        }
+        :nth-child(4){
+            width: calc(80% - 5px);
+        }
+    }
+    li{
+        background: #888;
+        height: 100px;
+    }
+}
+
+.box4{
+    margin: 10px 0;
+    background: #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    h2{
+        line-height: 50px;
+    }
+    .btn{
+        display: flex;
+        a{
+            width: 50px; height: 50px;
+            background: #fff;
+        }
+    }
+}
+
+.box5{
+    margin-bottom: 10px;
+    ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        
+        a{
+            background: #00f;
+            padding: 10px;
+            display: block;
+        }
+
+        strong{
+            background: #fff;
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        p{
+            background: #fff;
+            padding: 10px;
+        }
+    }
+}
